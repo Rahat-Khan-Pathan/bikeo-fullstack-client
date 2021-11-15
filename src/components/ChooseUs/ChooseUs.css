@@ -1,0 +1,42 @@
+/* Styles for why choose us section  */
+.choose-container {
+    margin-top: 80px;
+}
+.choose-icon img {
+    width: 50px;
+}
+.choose-card {
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 13px 1px rgb(0 0 0 / 15%);
+    padding: 20px !important;
+    width: 100%;
+}
+.choose-header {
+    font-weight: 700;
+    border-bottom: 3px solid black;
+    width: 30%;
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.choose-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Media query for mobile device  */
+@media only screen and (max-width: 575px) {
+    .choose-header {
+        width: 60%;
+        font-size: 20px;
+    }   
+    .choose-title {
+        font-size: 13px;
+    }
+    .choose-card {
+        width: 70%;
+    }
+}

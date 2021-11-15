@@ -1,0 +1,48 @@
+.side-navbar {
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  left: -400px;
+  background-color: #100901;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #212529;
+  cursor: pointer;
+}
+
+.my-container, .menu-btn {
+  transition: 0.4s;
+}
+.active-nav-side {
+  left: 0px;
+}
+.bikeo {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* for main section */
+.active-cont {
+  left: 100px;
+}
+
+.menu-btn {
+  background-color: #100901;
+  color: #fff;
+  position: fixed;
+  left: 225px;
+  padding: 10px 12px;
+  border-radius: 2px;
+}
+.active-menu {
+  left: 5px;
+}
+.details {
+  width: 500px;
+}
+

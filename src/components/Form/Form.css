@@ -1,0 +1,28 @@
+/* Styles for form component  */
+.book-input {
+    padding: 5px !important;
+}
+.book-address {
+    border: none;
+    min-height: 100px;
+}
+.book-address:focus {
+    outline: none !important;
+}
+.wrap-login100-form-btn {
+    border-radius: 5px;
+}
+.container-login100 {
+    padding: 0;
+}
+.wrap-login100 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.label-input100 {
+    color: #f8c63b;;
+}
+.no-product {
+    min-height: 50vh;
+}

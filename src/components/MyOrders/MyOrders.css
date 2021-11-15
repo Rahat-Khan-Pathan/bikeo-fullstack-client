@@ -1,0 +1,62 @@
+/* Styles for my booking option  */
+.my-bookings-container {
+    padding-top: 50px;
+    min-height: 100vh;
+}
+td,th {
+    font-size: 12px;
+}
+.fa-times-circle {
+    color: red;
+    font-size: 25px;
+}
+.PENDING {
+    background-color: #f8c63b !important;
+    color: white;
+    font-weight: 500;
+}
+.GOING {
+    background-color: grey !important;
+    color: white;
+    font-weight: 500;
+}
+.SHIPPED {
+    background-color: green !important;
+    color: white;
+    font-weight: 500;
+}
+.CANCELED {
+    background-color: red !important;
+    color: white;
+    font-weight: 500;
+}
+.booking-header {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+.dropdown-toggle {
+    font-size: 12px;
+}
+.dropdown-item {
+    font-size: 12px;
+}
+.table-responsive {
+    min-height: 40vh;
+}
+.my-table {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+thead {
+    color: #009edf;
+}
+
+/* Media query for mobile device  */
+@media only screen and (max-width:575px) {
+    td,th,.dropdown-item,.dropdown-toggle {
+        font-size: 10px;
+    }
+    .booking-header {
+        font-size: 20px;
+    }
+}

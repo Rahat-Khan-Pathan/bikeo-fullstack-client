@@ -1,0 +1,49 @@
+/* Styles for single product */
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(85, 84, 84);
+}
+.name {
+    font-size: 30px;
+    font-weight: 600;
+}
+.price {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card {
+    padding: 0;
+    margin: 0;
+}
+.product-card {
+    box-shadow: 0 2px 13px 1px rgb(0 0 0 / 15%);
+    border-radius: 15px !important;
+}
+.card-img-top {
+    height: 240px;
+    padding: 20px;
+}
+
+/* Media query for mobile device  */
+@media only screen and (max-width:575px) {
+    .price, .duration{
+        font-size: 13px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .book-btn {
+        font-size: 12px;
+    }
+    .card-img-top {
+        height: 200px;
+        padding: 12px;
+    }
+    .explore-btn {
+        font-size: 12px;
+    }
+    .offers-container2 {
+        margin-top: 50px !important;
+    }
+}

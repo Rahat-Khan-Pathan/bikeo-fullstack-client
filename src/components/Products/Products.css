@@ -1,0 +1,77 @@
+/* Styles for offers section  */
+.offers-container {
+    margin-top: 80px;
+    background-image: url('../../assets/products.jpg');
+    background-position: calc(10%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.offers-container2 {
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.offers-header {
+    color: white;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+    width: 30%;
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.offers-header2 {
+    color: white;
+    font-weight: 700;
+    background-color: #212529;
+    padding: 7px 0px;
+    border-radius: 30px;
+    width: 28%;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.review-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.slider-card {
+    height: auto;
+}
+.review-card {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    cursor: pointer;
+}
+
+/* Media query for mobile device  */
+@media only screen and (max-width: 575px) {
+    .offers-header {
+        width: 60%;
+        font-size: 20px;
+    }   
+    .offers-header2 {
+        width: 80%;
+        font-size: 20px;
+    }
+    .bikeo {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:767px) {
+    .review-img {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width:991px) {
+    .offers-header2 {
+        width: 60%;
+    }
+}
