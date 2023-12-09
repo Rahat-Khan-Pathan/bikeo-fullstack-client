@@ -10,10 +10,12 @@ import {
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeFirebaseAuth from "../Firebase/firebase.initialize";
+import { useHistory } from "react-router";
 
 initializeFirebaseAuth();
 
 const useFirebase = () => {
+    const history = useHistory();
     const [user, setUser] = useState({});
     const [message, setMessage] = useState("");
     const [message2, setMessage2] = useState("");
@@ -56,6 +58,7 @@ const useFirebase = () => {
                 // The signed-in user info.
                 const user = result.user;
                 setUser(user);
+                history.push("/home");
                 fetch(`${process.env.REACT_APP_DOMAIN}users`, {
                     method: "PUT",
                     headers: {
@@ -81,17 +84,10 @@ const useFirebase = () => {
                 // Signed in
                 const user = userCredential.user;
                 setUser(user);
+                history.push("/home");
             })
             .catch((error) => {
-                const errorCode = error.code;
-
-                if (errorCode === "auth/weak-password")
-                    setMessage("Password should be at least 6 characters");
-                else if (errorCode === "auth/user-not-found")
-                    setMessage("User not found for this email. Please sign up");
-                else if (errorCode === "auth/wrong-password")
-                    setMessage("Wrong Password");
-                else setMessage("Something went wrong, Please try again later");
+                setMessage("Invalid email or password. Please try again.");
             });
     };
 
@@ -101,12 +97,13 @@ const useFirebase = () => {
             .then(() => {
                 // Signed in
                 setUser(user);
+                history.push("/home");
                 updateProfile(auth.currentUser, {
                     displayName: name,
                     photoURL: url,
                 })
                     .then(() => {
-                        fetch("${process.env.REACT_APP_DOMAIN}users", {
+                        fetch(`${process.env.REACT_APP_DOMAIN}users`, {
                             method: "PUT",
                             headers: {
                                 "content-type": "application/json",
