@@ -11,7 +11,7 @@ const Explore = () => {
         window.scrollTo(0, 0);
 
         // GET all the products
-        fetch(`${process.env.REACT_APP_DOMAIN}products?numbers=0`)
+        fetch(`${process.env.REACT_APP_DOMAIN}products`)
             .then((res) => res.json())
             .then((data) => {
                 setProducts(data);
