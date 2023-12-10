@@ -1,6 +1,6 @@
 ## Bicyle Selling Website
 
-Live Site [Bikeo](https://assignment-12-4e89d.web.app/).
+Live Site [Bikeo](https://bikeo-fullstack.netlify.app/).
 
 ## Features
 
